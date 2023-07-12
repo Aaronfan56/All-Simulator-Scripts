@@ -1,7 +1,7 @@
-# All-Simulator-Scripts
-
+All-Simulator-Scripts
+--
 Make Your Own Game on Roblox.
 
-Game options
+Game Options
 --
 Simulator Game Link: 
