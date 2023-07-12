@@ -7,17 +7,17 @@ game.Players.PlayerAdded:Connect(function(player)
 	leaderstats.Name = "leaderstats"
 	leaderstats.Parent = player
 
-	local clicks = Instance.new("IntValue")
-	clicks.Name = "Clicks"
-	clicks.Parent = leaderstats
+	local coins = Instance.new("IntValue")
+	coins.Name = "Coins"
+	coins.Parent = leaderstats
 
 	local data
 	local success, errormessage = pcall(function()
-		data = myDataStore:GetAsync(player.UserId.."-clicks")
+		data = myDataStore:GetAsync(player.UserId.."-coins")
 	end)
 
 	if success then
-		clicks.Value = data
+		Coins.Value = data
 	else
 		print("There was a error whilst getting your data")
 		warn(errormessage)
@@ -27,7 +27,7 @@ end)
 game.Players.PlayerRemoving:Connect(function(player)
 
 	local success, errormessage = pcall(function()
-		myDataStore:SetAsync(player.UserId.."-clicks", player.leaderstats.Clicks.Value)
+		myDataStore:SetAsync(player.UserId.."-clicks", player.leaderstats.Coins.Value)
 	end)
 
 	if success then
