@@ -1,3 +1,3 @@
 script.Parent.MouseButton1Click:Connect(function()
-    -- Your Ui here
+    -- Your Gui here
 end)
