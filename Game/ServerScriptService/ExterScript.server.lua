@@ -7,5 +7,4 @@ local function Badge(player)
 	end
 end
 
-
 game.Players.PlayerAdded:Connect(Badge)
