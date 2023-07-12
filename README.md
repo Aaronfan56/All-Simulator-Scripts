@@ -1,5 +1,5 @@
 # Game Options
 
-Simulator Game Link: 
+Simulator Game Link:
 
-Tycoon Game Link: 
+Tycoon Game Link:
